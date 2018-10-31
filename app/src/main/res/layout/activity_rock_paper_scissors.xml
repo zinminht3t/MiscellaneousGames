@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RockPaperScissors">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="70sp">
+
+
+        <TextView
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer: "/>
+
+
+        <TextView
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/computermark"
+            android:text="0"/>
+
+
+        <TextView
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Human: "/>
+
+
+        <TextView
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/humanmark"
+            android:text="0"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:src="@drawable/ic_menu_camera"
+        android:minHeight="200sp"
+        android:id="@+id/imagersp"
+        android:maxHeight="200sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnRock"
+            android:onClick="btnRock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rock"/>
+
+        <Button
+            android:id="@+id/btnPaper"
+            android:onClick="btnRock"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paper"/>
+
+        <Button
+            android:id="@+id/btnScissor"
+            android:onClick="btnRock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scissor"/>
+    </LinearLayout>
+
+</LinearLayout>
